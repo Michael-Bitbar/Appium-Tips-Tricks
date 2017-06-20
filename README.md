@@ -9,11 +9,8 @@ In order to take advantage of Bitbar Testing infrastructure, devices and testing
 
 ## testdroid_username
 Mandatory: yes
-
 Description: The email registered at Bitbar Testing
-
 Example: username@domain.com
-
 Java: capabilities.SetCapability("testdroid_testTimeout", 1200)
 
 ## testdroid_password
