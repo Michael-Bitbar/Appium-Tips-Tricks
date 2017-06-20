@@ -5,7 +5,7 @@ Desired capabilities are a set of keys and values sent to the Appium server to t
 
 Appium is very similar to Selenium. An Appium test is very similar as a Selenium test: Both use the same WebDriver, and DesiredCapabilities is used the same way. Configuring an application to run on Appium has a lot of similarities to Selenium — for example, those DesiredCapabilities.
 
-In order to take advantage of Bitbar Testing infrastructure, devices and testing capabilities, additional Desired Capabilities have been introduced. When running your Appium tests from client-side some of these desired capabilities are mandatory and some not:
+To take advantage of Bitbar Testing infrastructure, devices and testing capabilities, additional Desired Capabilities have been introduced. When running Appium tests from client-side some of these desired capabilities are mandatory and some not:
 
 ## testdroid_username
 Mandatory: yes  
