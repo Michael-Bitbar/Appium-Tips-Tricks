@@ -8,10 +8,10 @@ Appium is very similar to Selenium. An Appium test is very similar as a Selenium
 In order to take advantage of Bitbar Testing infrastructure, devices and testing capabilities, additional Desired Capabilities have been introduced. When running your Appium tests from client-side some of these desired capabilities are mandatory and some not:
 
 ## testdroid_username
-> Mandatory: yes
-> Description: The email registered at Bitbar Testing
-> Example: username@domain.com
-> Java: capabilities.SetCapability("testdroid_testTimeout", 1200);
+Mandatory: yes;
+Description: The email registered at Bitbar Testing;
+Example: username@domain.com;
+Java: capabilities.SetCapability("testdroid_testTimeout", 1200);
 
 ## testdroid_password
 Mandatory: yes
