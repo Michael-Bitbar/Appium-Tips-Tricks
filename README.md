@@ -8,17 +8,17 @@ Appium is very similar to Selenium. An Appium test is very similar as a Selenium
 In order to take advantage of Bitbar Testing infrastructure, devices and testing capabilities, additional Desired Capabilities have been introduced. When running your Appium tests from client-side some of these desired capabilities are mandatory and some not:
 
 ## testdroid_username
-Mandatory: yes 
-Description: The email registered at Bitbar Testing 
-Example: username@domain.com 
-Java: capabilities.SetCapability("testdroid_testTimeout", 1200) 
+Mandatory: yes  
+Description: The email registered at Bitbar Testing  
+Example: username@domain.com  
+Java: capabilities.SetCapability("testdroid_testTimeout", 1200)
 
 ## testdroid_password
-Mandatory: yes
-Description: The password for your Bitbar Testing account
+Mandatory: yes  
+Description: The password for your Bitbar Testing account  
 
 ## testdroid_target
-Mandatory: yes
+Mandatory: yes 
 Description: The target test type. Use one of the following value. 'android' and 'ios' are for native apps, 'selendroid' when testing a hybrid app and 'chrome' and 'safari' for web testing using the respective web browsers. 'selendroid' is also needed for older devices with API strictly lower than 17.
 Values: android | selendroid | ios | chrome | safari
 
