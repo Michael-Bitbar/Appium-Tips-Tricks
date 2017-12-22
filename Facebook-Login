@@ -1,1 +1,0 @@
-If FB is not installed, there are two possible routes the test can go. For older versions of Android, Appium can login via the web. On Android 4.4+, Appium should be able to log into Facebook via FB Lite. For more details, see FB’s developer notes: https://developers.facebook.com/docs/facebook-login/android.
