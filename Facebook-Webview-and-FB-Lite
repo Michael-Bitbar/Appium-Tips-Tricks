@@ -1,4 +1,4 @@
- +        //Credentials both webview and app
+ +        //Credentials for both webview and FB Lite
  +        takeScreenshot("Facebook login");
  +        if(isElementVisibleId("m_login_email", 2)) {
  +            driver.findElement(By.id("m_login_email")).setValue("gduriwpqqx_1507920768@tfbnw.net");
