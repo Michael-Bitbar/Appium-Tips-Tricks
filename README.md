@@ -1,4 +1,4 @@
-## Appium Tips & Tricks
+# Appium-Tips-&-Tricks
 Bitbar supports thousands of customers that are using Appium in the public cloud, Private Cloud as well as On-Premise clouds. The Bitbar  Professional Services team also helps jump start test automation, maintains test automation frameworks or even manages end-to-end testing for customers. I've been closely involved in supporting customers that want to run Appium on Bitbar Test Cloud and I wanted to share some general tips & tricks to help people adopt Appium into their test process.
 
 ## Testing Facebook Login Integration
@@ -10,7 +10,7 @@ Useful, right? Yea, only when it works! How the heck do you test this across lot
 1. Android 4.4+ 
 2. Older Android versions
 
-# Desired-Capabilities-for-Bitbar-Test-Cloud
+## Desired Capabilities for Bitbar Test Cloud
 Includes versions for client-side and server-side execution.
 
 Desired capabilities are a set of keys and values sent to the Appium server to tell the server what kind of automation session should be started. There are also various capabilities to modify the behavior of the server during automation. For example the platformName capability can be set to ‘iOS’ to tell Appium an iOS session is needed, rather than an Android one. Or the safariAllowPopups capability can be set to true in order to ensure that, during a Safari automation session, JavaScript is allowed to open up new windows.
