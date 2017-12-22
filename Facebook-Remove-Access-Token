@@ -1,4 +1,7 @@
- +    @Test
+ +    /*
+ +        If device has native Facebook app installed login will use that and this will remove access token
+ +        so that user will not stay logged in
+ +    */ 
  +    public void removeFacebookAccessToken() throws Exception {
  +        String token = searchStringFromLog("access_token", "logcat2.txt");
  +        List<String> list = Arrays.asList(token.split(","));
