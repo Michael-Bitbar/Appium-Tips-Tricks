@@ -1,0 +1,62 @@
+ +        //Credentials both webview and app
+ +        takeScreenshot("Facebook login");
+ +        if(isElementVisibleId("m_login_email", 2)) {
+ +            driver.findElement(By.id("m_login_email")).setValue("gduriwpqqx_1507920768@tfbnw.net");
+ +        } else if(isElementVisibleId("com.facebook.katana:id/login_username", 2)) {
+ +            driver.findElement(By.id("com.facebook.katana:id/login_username"))
+ +                    .setValue("gduriwpqqx_1507920768@tfbnw.net");
+ +        } else if(isElementVisibleXpath("//android.widget.EditText[contains(., 'Email')]", 2)){
+ +           driver.findElement(By.xpath("//android.widget.EditText[contains(., 'Email')] | " +
+ +                    "//android.widget.EditText[@text='Email or Phone'] | " +
+ +                    "//android.widget.EditText[@password='false']")).setValue("gduriwpqqx_1507920768@tfbnw.net");
+ +        } else if(isElementVisibleXpath("//android.widget.EditText[1]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.EditText[1]")).setValue("gduriwpqqx_1507920768@tfbnw.net");
+ +        }
+ +        try {
+ +            driver.hideKeyboard();
+ +        } catch (Exception e) {
+ +            logger.info("Keyboard not present");
+ +        }
+ +
+ +        if(isElementVisibleId("m_login_password", 2)) {
+ +            driver.findElement(By.id("m_login_password")).setValue("bitbar7");
+ +        } else if(isElementVisibleId("com.facebook.katana:id/login_password", 2)) {
+ +            driver.findElement(By.id("com.facebook.katana:id/login_password"))
+ +                    .setValue("bitbar7");
+ +        } else if(isElementVisibleXpath("//android.widget.EditText[2]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.EditText[2]")).setValue("bitbar7");
+ +        } else if(isElementVisibleXpath("//android.widget.EditText[@password=\"true\"]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.EditText[@password=\"true\"]"))
+ +                    .setValue("bitbar7");
+ +        } try {
+ +            driver.hideKeyboard();
+ +        } catch (Exception e) {
+ +            logger.info("Keyboard not present");
+ +        }
+ +
+ +        //Facebook Login has different content-desc/text in different versions.
+ +        TouchAction touchAction = new TouchAction(driver);
+ +        touchAction.press(startx, starty).waitAction().moveTo(startx, endy).release().perform();
+ +        if(isElementVisibleId("com.facebook.katana:id/login_login", 2)) {
+ +            driver.findElement(By.id("com.facebook.katana:id/login_login")).click();
+ +        } else if(isElementVisibleXpath("//android.widget.Button[@content-desc=\"Log In \"]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Log In \"]")).click();
+ +        } else if(isElementVisibleXpath("//android.widget.Button[@text=\"Log In\"]", 2)) {
+ +            driver.findElement(By.xpath("\"//android.widget.Button[@text=\"Log In\"]\"")).click();
+ +        } else if(isElementVisibleXpath("//android.widget.Button[@text=\"Log In \"]", 2)) {
+ +            driver.findElement(By.xpath("\"//android.widget.Button[@text=\"Log In \"]\"")).click();
+ +        } else if(isElementVisibleXpath("//android.widget.Button[@content-desc=\"Log In\"]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Log In\"]")).click();
+ +        } else if(isElementVisibleXpath("//android.widget.Button[5]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.Button[5]")).click();
+ +        }
+ +
+ +        //Facebook Login has continue in some versions.
+ +        sleep(5);
+ +        if(isElementVisibleId("u_0_9", 2)) {
+ +            driver.findElement(By.id("u_0_9")).click();
+ +        } else if(isElementVisibleXpath("//android.widget.Button[@content-desc=\"Continue \"]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Continue \"]")).click();
+ +        } else if(isElementVisibleXpath("//android.widget.Button[@content-desc=\"Continue\"]", 2)) {
+ +            driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Continue\"]")).click();
+ +        }
