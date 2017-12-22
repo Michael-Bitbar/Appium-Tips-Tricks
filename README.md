@@ -10,6 +10,8 @@ Useful, right? Yea, only when it works! How the heck do you test this across lot
 1. Android 4.4+ 
 2. Older Android versions
 
+If a device has the native Facebook app installed login will use that and this will remove access token, so that user will not stay logged in.
+
 ## Desired Capabilities for Bitbar Test Cloud
 Includes versions for client-side and server-side execution.
 
