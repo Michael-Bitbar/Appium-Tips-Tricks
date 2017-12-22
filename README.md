@@ -1,5 +1,5 @@
 # Appium Tips & Tricks
-Bitbar supports thousands of customers that are using Appium in the public cloud, Private Cloud as well as On-Premise clouds. The Bitbar  Professional Services team also helps jump start test automation, maintains test automation frameworks or even manages end-to-end testing for customers. I've been closely involved in supporting customers that want to run Appium on Bitbar Test Cloud and I wanted to share some general tips & tricks to help people adopt Appium into their test process.
+Bitbar supports thousands of customers that are using Appium in on Bitbar Test Cloud, Bitbar Private Cloud as well as Bitbar On-Premise systems. The Bitbar  Professional Services team also helps jump start test automation, maintains test automation frameworks or even manages end-to-end testing for customers. I've been closely involved in supporting customers that want to run Appium on Bitbar Test Cloud and I wanted to share some general tips & tricks to help people adopt Appium into their test process.
 
 ## Testing Facebook Login Integration
 
