@@ -1,3 +1,15 @@
+## Appium Tips & Tricks
+Bitbar supports thousands of customers that are using Appium in the public cloud, Private Cloud as well as On-Premise clouds. The Bitbar  Professional Services team also helps jump start test automation, maintains test automation frameworks or even manages end-to-end testing for customers. I've been closely involved in supporting customers that want to run Appium on Bitbar Test Cloud and I wanted to share some general tips & tricks to help people adopt Appium into their test process.
+
+## Testing Facebook Login Integration
+
+The Facebook SDK enables people to sign into apps with Facebook Login. When people log into an app with Facebook they can grant permissions to it, so you can retrieve information or perform actions on Facebook on their behalf.
+
+Useful, right? Yea, only when it works! How the heck do you test this across lots of different mobile devices that may present the login screen a bit different depending on the OS version? The news is, Facebook is already installed by the OEM on a lot of devices and there are only 2 main versions on Android you have to think about.
+
+1. Android 4.4+ 
+2. Older Android versions
+
 # Desired-Capabilities-for-Bitbar-Test-Cloud
 Includes versions for client-side and server-side execution.
 
