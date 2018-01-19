@@ -5,7 +5,7 @@ Bitbar supports thousands of customers that are using Appium in on Bitbar Test C
 
 The Facebook SDK enables people to sign into apps with Facebook Login. When people log into an app with Facebook they can grant permissions to it, so you can retrieve information or perform actions on Facebook on their behalf.
 
-Useful, right? Yea, only when it works! How the heck do you test this integration with your app across a large spectrum of mobile devices that may present the login screen differently, depending on the OS version? The good news is, Facebook is already installed by the OEM on a lot of devices. The bad news is, there are a couple major different scenarios you have to take into consideration when planning out your mobile test automation framework:
+Useful, right? Yea, only when it works! How the heck do you test this integration with your app across a large spectrum of mobile devices that may present the login screen differently, depending on the OS version? The good news is, Facebook is already installed by the OEM on a lot of devices. The bad news is, there are a couple different scenarios you have to take into consideration when planning out your mobile test automation framework:
 
 1. Android 4.4+
 2. Older Android versions
